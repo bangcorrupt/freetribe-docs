@@ -1,6 +1,6 @@
 # Getting Started
 
-### Examples
+## Examples
 
 The main demo uses the volume knob to control attenuation of audio pass-through,
 while sending MIDI CC and printing to the display. An LED blinks at regular intervals.
