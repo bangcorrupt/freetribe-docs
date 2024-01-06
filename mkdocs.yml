@@ -1,0 +1,18 @@
+site_name: Freetribe Documentation
+site_url: https://bangcorrupt.github.io/freetribe-docs
+
+nav:
+  - index.md
+  - features.md
+  - getting-started.md
+  - support.md
+  - acknowledgements.md
+  - license.md
+
+theme:
+  name: material
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
