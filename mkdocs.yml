@@ -1,5 +1,8 @@
 site_name: Freetribe Documentation
 site_url: https://bangcorrupt.github.io/freetribe-docs
+site_description: Documentation for Freetribe, a free, open-source firmware for Electribe 2.
+repo_url: https://github.com/bangcorrupt/freetribe
+repo_name: bangcorrupt/freetribe
 
 nav:
   - index.md
@@ -19,6 +22,14 @@ theme:
     - search.suggest
     - search.highlight
 
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: slate
@@ -31,8 +42,14 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/bangcorrupt
 
 markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
+copyright: Freetribe Documentation &copy; 2024 by bangcorrupt is licensed under CC BY-NC-SA 4.0
