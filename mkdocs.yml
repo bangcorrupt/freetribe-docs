@@ -7,6 +7,7 @@ repo_name: bangcorrupt/freetribe
 nav:
   - index.md
   - features.md
+  - architecture.md
   - getting-started.md
   - toolchain.md
   - building.md
