@@ -10,22 +10,28 @@
       
       
       
+        <link rel="canonical" href="https://bangcorrupt.github.io/freetribe-docs/debugging/">
       
       
+        <link rel="prev" href="../building/">
       
-      <link rel="icon" href="/freetribe-docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../tutorial/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
     
     
       
-        <title>Freetribe Documentation</title>
+        <title>Attaching a Debugger - Freetribe Documentation</title>
       
     
     
-      <link rel="stylesheet" href="/freetribe-docs/assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
       
         
-        <link rel="stylesheet" href="/freetribe-docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/freetribe-docs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#attaching-a-debugger" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/freetribe-docs/." title="Freetribe Documentation" class="md-header__button md-logo" aria-label="Freetribe Documentation" data-md-component="logo">
+    <a href=".." title="Freetribe Documentation" class="md-header__button md-logo" aria-label="Freetribe Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Attaching a Debugger
             
           </span>
         </div>
@@ -216,7 +227,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/freetribe-docs/." title="Freetribe Documentation" class="md-nav__button md-logo" aria-label="Freetribe Documentation" data-md-component="logo">
+    <a href=".." title="Freetribe Documentation" class="md-nav__button md-logo" aria-label="Freetribe Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -246,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -266,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/features/" class="md-nav__link">
+      <a href="../features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -286,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/architecture/" class="md-nav__link">
+      <a href="../architecture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,7 +317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -326,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/toolchain/" class="md-nav__link">
+      <a href="../toolchain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -346,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/building/" class="md-nav__link">
+      <a href="../building/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -363,10 +374,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/freetribe-docs/debugging/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Attaching a Debugger
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -375,6 +406,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      DSP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -386,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/tutorial/" class="md-nav__link">
+      <a href="../tutorial/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/support/" class="md-nav__link">
+      <a href="../support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/acknowledgements/" class="md-nav__link">
+      <a href="../acknowledgements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/freetribe-docs/license/" class="md-nav__link">
+      <a href="../license/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -476,6 +545,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dsp" class="md-nav__link">
+    <span class="md-ellipsis">
+      DSP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -487,8 +584,72 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="attaching-a-debugger">Attaching a Debugger</h1>
+<p>See the <a href="https://github.com/bangcorrupt/hacktribe/wiki/Debrick#rpi-and-openocd">Hacktribe Debrick Guide</a> for more details on getting a debugger attached.</p>
+<h2 id="cpu">CPU</h2>
+<p>For the CPU, a JLink EDU and JLinkGDBServer works well.
+We can also use a Raspberry Pi and OpenOCD.</p>
+<p>If using JLink, connect the debugger to USB host,
+then power electribe using modified power switch. Then run:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>JLinkGDBServer -device am1802 -speed 0
+</span></code></pre></div>
+<p>If using Raspberry Pi, OpenOCD will exit if the electribe is not powered,
+but the electribe will boot if OpenOCD is not attached,
+so we need some trickery. First power up electribe, then run OpenOCD,
+then power off electribe with OpenOCD still running.
+Then power up electribe again before restarting OpenOCD.
+It is a lot easier to use a JLink.</p>
+<p>Once you have a gdb server attached to the CPU,
+change directory to <code>freetribe/cpu</code> and run:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>arm-none-eabi-gdb
+</span></code></pre></div>
+<p>The commands in <code>freetribe/cpu/.gdbinit</code> should connect to the gdb server,
+load the symbols from <code>cpu/build/cpu.elf</code> and run the firmware.
+You may need to edit the port number in <code>.gdbinit</code>. OpenOCD uses <code>3333</code> by default,
+with JLinkGDBServer using <code>2331</code>.</p>
+<p>If all is well, you should hit a breakpoint at <code>main</code>.<br />
+Other useful breakpoints may be <code>knl_init</code>, <code>knl_run</code>, <code>app_init</code> and <code>app_run</code>.</p>
+<h2 id="dsp">DSP</h2>
+<p>For the DSP, I've only managed to get the official debugger from Analog Devices working.<br />
+The ADSP-ICE-1000 costs around £180 (thank you sponsors) and is very much a one-trick pony.
+I will try again to get the Raspberry Pi set up with the DSP,
+but I'm not sure if the Analog Devices OpenOCD fork is even supposed to support this.</p>
+<p>The good news is, the DSP firmware is loaded by the CPU.
+So if you can deal without debugging you can still load and run your code.</p>
+<p>If you have a debugger for the DSP, first run the binary on the CPU.
+By the time the CPU reaches <code>app_run</code> the DSP kernel will be running.</p>
+<p>Change directory to <code>freetribe/dsp</code> and run:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo openocd-bfin -s /usr/share/openocd-bfin/scripts \
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>                  -f /usr/share/openocd-bfin/scripts/interface/ice1000.cfg \
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>                  -f /usr/share/openocd-bfin/scripts/target/bf527.cfg
+</span></code></pre></div>
+<p>Then in another shell in the same directory:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>bfin-elf-gdb
+</span></code></pre></div>
+<p>The commands in <code>freetribe/dsp/.gdbinit</code> should connect to the gdb server,
+load the symbols from <code>freetribe/dsp/build/bfin.elf</code> and
+set a breakpoint at <code>module_process</code>, the audio processing callback.</p>
+<p>I will try to add new sysex functions to Hacktribe,
+so we can load and execute code without needing a debugger.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -506,6 +667,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../building/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Building an Application">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Building an Application
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../tutorial/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorial">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Tutorial
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -551,10 +750,10 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "/freetribe-docs/", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow"], "search": "/freetribe-docs/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/freetribe-docs/assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
