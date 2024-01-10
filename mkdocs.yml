@@ -8,6 +8,10 @@ nav:
   - index.md
   - features.md
   - getting-started.md
+  - toolchain.md
+  - building.md
+  - debugging.md
+  - "Tutorial": tutorial.md
   - support.md
   - acknowledgements.md
   - license.md
@@ -28,6 +32,7 @@ theme:
     - navigation.tracking
     - navigation.top
     - navigation.footer
+    - navigation.indexes
     - toc.follow
 
   palette:
@@ -48,8 +53,13 @@ extra:
       link: https://github.com/bangcorrupt
 
 markdown_extensions:
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
 
 copyright: Freetribe Documentation &copy; 2024 by bangcorrupt is licensed under CC BY-NC-SA 4.0
