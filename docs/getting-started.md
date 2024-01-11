@@ -33,7 +33,7 @@ First, we must include the Freetribe API:
 This gives us access to all the functions our 
 application should need for interacting with the device.
 
-Next, there are 2 functions we should override in order for our app to run.
+Next, there are 2 functions we should override.
 The first, `app_init()`, runs once when our app starts. 
 This is a good place to register callbacks for events we are interested in, 
 and do any initialisation required by external libraries.
