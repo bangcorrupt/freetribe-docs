@@ -1,8 +1,8 @@
 site_name: Freetribe Documentation
 site_url: https://bangcorrupt.github.io/freetribe-docs
 site_description: Documentation for Freetribe, a free, open-source firmware for Electribe 2.
-repo_url: https://github.com/bangcorrupt/freetribe
-repo_name: bangcorrupt/freetribe
+repo_url: https://github.com/bangcorrupt/freetribe-docs
+repo_name: bangcorrupt/freetribe-docs
 
 nav:
   - index.md
