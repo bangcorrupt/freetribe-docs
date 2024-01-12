@@ -7,7 +7,10 @@ repo_name: bangcorrupt/freetribe-docs
 nav:
   - index.md
   - features.md
-  - architecture.md
+  - "Architecture":
+      - architecture.md
+      - cpu-architecture.md
+      - dsp-architecture.md
   - getting-started.md
   - toolchain.md
   - building.md
@@ -61,6 +64,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-
 
 copyright: Freetribe Documentation &copy; 2024 by bangcorrupt is licensed under CC BY-NC-SA 4.0
