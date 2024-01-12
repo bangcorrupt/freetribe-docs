@@ -323,18 +323,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cpu-kernel" class="md-nav__link">
+  <a href="#existing-features" class="md-nav__link">
     <span class="md-ellipsis">
-      CPU Kernel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dsp-kernel" class="md-nav__link">
-    <span class="md-ellipsis">
-      DSP Kernel
+      Existing Features
     </span>
   </a>
   
@@ -659,18 +650,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cpu-kernel" class="md-nav__link">
+  <a href="#existing-features" class="md-nav__link">
     <span class="md-ellipsis">
-      CPU Kernel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dsp-kernel" class="md-nav__link">
-    <span class="md-ellipsis">
-      DSP Kernel
+      Existing Features
     </span>
   </a>
   
@@ -709,10 +691,7 @@ Most of the hardware initialisation is complete, with driver stacks for much
 of the system. Built on this is a set of services providing a high-level
 interface to the device. Some basic examples are provided, showing how to
 integrate user application code with the Freetribe kernel.</p>
-<h2 id="cpu-kernel">CPU Kernel</h2>
-<p>The CPU kernel initialises the hardware,
-processes communication with the outside world
-and controls the Blackfin DSP via a serial command interface.</p>
+<h2 id="existing-features">Existing Features</h2>
 <ul>
 <li>Serial MIDI input and output via TRS port.</li>
 <li>Set or clear a pixel anywhere in the vast 128x64 dot-matrix.</li>
@@ -720,13 +699,8 @@ and controls the Blackfin DSP via a serial command interface.</p>
 <li>Register callbacks for all of the panel controls.</li>
 <li>Set and toggle LEDs, with brightness control for those with support.</li>
 <li>Send commands to the Blackfin DSP and receive feedback.</li>
-</ul>
-<h2 id="dsp-kernel">DSP Kernel</h2>
-<p>The DSP kernel receives commands from the CPU and processes audio frames.
-A user defined module runs in the audio callback,
-with an interface similar to many plugin formats.</p>
-<ul>
 <li>Process audio based on control input.</li>
+<li>Audio module API similar to many plugin formats.</li>
 </ul>
 <h2 id="planned-features">Planned Features</h2>
 <p>Some of these are in progress, most should be possible.</p>
@@ -737,8 +711,8 @@ with an interface similar to many plugin formats.</p>
 <li>SD card driver.</li>
 <li>DSP block processing.</li>
 <li>Cache and memory protection.</li>
-<li>Dynamic Linking of apps and modules.</li>
-<li>Preemptive sheduling using FreeRTOS.</li>
+<li>Dynamic linking of apps and modules.</li>
+<li>Preemptive scheduling using FreeRTOS.</li>
 <li>Embedded LUA and MicroPython.</li>
 <li>Support for sync ports.</li>
 </ul>
