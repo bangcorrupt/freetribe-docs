@@ -35,7 +35,7 @@ Some of these are in progress, most should be possible.
 - DMA support for peripheral drivers.
 - USB driver.
 - SD card driver.
-- DSP block processing
+- DSP block processing.
 - Cache and memory protection.
 - Dynamic Linking of apps and modules.
 - Preemptive sheduling using FreeRTOS.
