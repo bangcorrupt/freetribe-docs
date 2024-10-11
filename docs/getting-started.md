@@ -15,8 +15,8 @@ Create a codespace on the `main` branch of the Freetribe Github repo,
 then create a directory for the app and a file for the code:
 
 ```bash
-mkdir cpu/src/apps/blink
-touch cpu/src/apps/blink.c
+mkdir cpu/src/apps/my-blink
+touch cpu/src/apps/my_blink.c
 ```
 
 Open `blink.c` in the editor of your choice. The codespace includes VSCode and neovim.
