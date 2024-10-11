@@ -61,6 +61,25 @@ do as little as possible each time they are invoked.
 
 ### API
 
+`freetribe/cpu/src/kernel/api/ft_*`
+
+The API layer provides an interface to everything needed by user code.
+Function names should be human friendly, with reduced sets of arguments where possible.
+
 ## User
 
+`freetribe/cpu/src/user/usr_*`
+
+The user task runs any code provided as an app.
+There are 2 functions we override, `app_init()` and `app_run()`,
+see [Getting Started](getting-started.md) for more.
+
 ### App
+
+`freetribe/cpu/src/apps/*`
+
+Apps are whatever we make them. We override the `app_init()` and `app_run()` functions
+from the user task and call functions from the API.
+Apps that process audio must have a corresponding module in the DSP firmware.
+
+See the [Freetribe Tutorial](tutorial.md) for more.

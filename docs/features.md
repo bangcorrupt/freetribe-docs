@@ -26,8 +26,8 @@ Some of these are in progress, most should be possible.
 - USB driver.
 - SD card driver.
 - DSP block processing.
-- Cache and memory protection.
-- Dynamic linking of apps and modules.
+- Memory protection.
+- Dynamic loading of apps and modules.
 - Preemptive scheduling using FreeRTOS.
-- Embedded LUA and MicroPython.
+- Embedded Lua and MicroPython.
 - Support for sync ports.
