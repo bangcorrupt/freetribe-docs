@@ -19,7 +19,8 @@ mkdir cpu/src/apps/my-blink
 touch cpu/src/apps/my_blink.c
 ```
 
-Open `my_blink.c` in the editor of your choice. The codespace includes VSCode and neovim.
+Open `my_blink.c` in the editor of your choice.
+The codespace includes VSCode and neovim.
 
 ## Minimal Example
 
