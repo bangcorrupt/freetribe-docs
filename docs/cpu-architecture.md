@@ -71,7 +71,7 @@ Function names should be human friendly, with reduced sets of arguments where po
 `freetribe/cpu/src/user/usr_*`
 
 The user task runs any code provided as an app.
-There are 2 functions we override, `app_init()` and `app_run()`,
+There are two functions we override, `app_init()` and `app_run()`,
 see [Getting Started](getting-started.md) for more.
 
 ### App
