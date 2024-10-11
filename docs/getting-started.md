@@ -19,7 +19,7 @@ mkdir cpu/src/apps/my-blink
 touch cpu/src/apps/my_blink.c
 ```
 
-Open `blink.c` in the editor of your choice. The codespace includes VSCode and neovim.
+Open `my_blink.c` in the editor of your choice. The codespace includes VSCode and neovim.
 
 ## Minimal Example
 
@@ -90,14 +90,14 @@ This is all the code we need to blink an LED at regular intervels,
 everything else is taken care of by the Freetribe kernel. It is
 important that any code we write is non-blocking, as everything
 is running in the same loop as the kernel.
-The full listing of `blink.c` is reproduced at the bottom of this page.
+The full listing of `my_blink.c` is reproduced at the bottom of this page.
 
 ## Building
 
 Build with `make`, passing the name of our app directory in the APP environment variable:
 
 ```bash
-make clean && make APP=blink
+make clean && make APP=my-blink
 ```
 
 There will be a lot of warnings but there should be no errors.
