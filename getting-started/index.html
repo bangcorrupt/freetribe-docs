@@ -820,7 +820,7 @@ and resets the delay state to zero.</p>
 <h2 id="_1"></h2>
 <p>The second function, <code>app_run()</code>, is called continuously by <code>usr_main_task()</code>
 in the main loop, after <code>app_init()</code> has completed.
-The <code>app_run</code> function takes no arguments and returns nothing.
+The <code>app_run()</code> function takes no arguments and returns nothing.
 In this example, we toggle an LED on the panel if 1 second has passed,
 and reset the delay start time. The <code>ft_delay()</code> function returns 'true'
 if the delay time has expired since <code>ft_start_delay()</code> was executed.
