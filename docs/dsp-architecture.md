@@ -11,8 +11,7 @@ be made more similar to the CPU firmware.
 
 `freetribe/dsp/src/kernel/knl_*`
 
-Similar to the CPU firmware, the kernel should orchestrate a set of services,
-built on device and peripheral drivers.
+The kernel orchestrates a set of services, built on device and peripheral drivers.
 The rest of this section looks at each layer, from the hardware up.
 
 ### Peripheral
