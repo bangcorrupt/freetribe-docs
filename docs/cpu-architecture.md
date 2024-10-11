@@ -64,7 +64,7 @@ do as little as possible each time they are invoked.
 `freetribe/cpu/src/kernel/api/ft_*`
 
 The API layer provides an interface to everything needed by user code.
-Function names should be human friendly, with reduced sets of arguments where possible.
+Function names should be human friendly, with reduced sets of parameters where possible.
 
 ## User
 
