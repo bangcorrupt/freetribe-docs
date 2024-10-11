@@ -66,7 +66,7 @@ The second function, `app_run()`, is called continuously by `usr_main_task()`
 in the main loop, after `app_init()` has completed.
 The `app_run()` function takes no arguments and returns nothing.
 In this example, we toggle an LED on the panel if one second has passed,
-and reset the delay start time. The `ft_delay()` function returns 'true'
+and reset the delay start time. The `ft_delay()` function returns `true`
 if the delay time has expired since `ft_start_delay()` was executed.
 The `ft_toggle_led()` function takes the index of an led,
 and toggles it on or off. We can call `ft_start_delay()` again with
