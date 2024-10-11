@@ -787,7 +787,7 @@ then create a directory for the app and a file for the code:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>cpu/src/apps/my-blink
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>touch<span class="w"> </span>cpu/src/apps/my_blink.c
 </span></code></pre></div>
-<p>Open <code>blink.c</code> in the editor of your choice. The codespace includes VSCode and neovim.</p>
+<p>Open <code>my_blink.c</code> in the editor of your choice. The codespace includes VSCode and neovim.</p>
 <h2 id="minimal-example">Minimal Example</h2>
 <p>First, we must include the Freetribe API:</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;freetribe.h&quot;</span>
@@ -844,10 +844,10 @@ the same struct to reset the delay to zero.</p>
 everything else is taken care of by the Freetribe kernel. It is
 important that any code we write is non-blocking, as everything
 is running in the same loop as the kernel.
-The full listing of <code>blink.c</code> is reproduced at the bottom of this page.</p>
+The full listing of <code>my_blink.c</code> is reproduced at the bottom of this page.</p>
 <h2 id="building">Building</h2>
 <p>Build with <code>make</code>, passing the name of our app directory in the APP environment variable:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>make<span class="w"> </span>clean<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span><span class="nv">APP</span><span class="o">=</span>blink
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>make<span class="w"> </span>clean<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span><span class="nv">APP</span><span class="o">=</span>my-blink
 </span></code></pre></div>
 <p>There will be a lot of warnings but there should be no errors.
 See <a href="../building/">Building an Application</a> for more information about the build system.</p>
