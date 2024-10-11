@@ -1,6 +1,6 @@
 # CPU Firmware
 
-`freetribe/cpu/src`
+`freetribe/cpu/src/*`
 
 The CPU firmware controls the full system, initialising the other hardware,
 processing user input and providing feedback.
