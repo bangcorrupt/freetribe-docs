@@ -428,9 +428,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hal" class="md-nav__link">
+  <a href="#csl" class="md-nav__link">
     <span class="md-ellipsis">
-      HAL
+      CSL
     </span>
   </a>
   
@@ -744,9 +744,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hal" class="md-nav__link">
+  <a href="#csl" class="md-nav__link">
     <span class="md-ellipsis">
-      HAL
+      CSL
     </span>
   </a>
   
@@ -851,14 +851,14 @@ The rest of this section looks at each layer, from the hardware up.</p>
 <p>Macros and definitions for accessing CPU registers.
 These files are from Texas Instruments Starterware.
 We should not have to modify anything at this layer.</p>
-<h3 id="hal">HAL</h3>
-<p><code>freetribe/cpu/src/kernel/hal/hal_*</code></p>
-<p>Functions for accessing CPU registers.
+<h3 id="csl">CSL</h3>
+<p><code>freetribe/cpu/src/kernel/csl/csl_*</code></p>
+<p>The Chip Support Library provides functions for accessing CPU registers.
 These files are from Texas Instruments Starterware.
 It is unlikely that we will need to modify anything at this layer.</p>
 <h3 id="peripheral">Peripheral</h3>
 <p><code>freetribe/cpu/src/kernel/peripheral/per_*</code></p>
-<p>The peripheral layer uses HAL functions to initialise and control CPU peripherals,
+<p>The peripheral layer uses CSL functions to initialise and control CPU peripherals,
 such as UART or SPI. Interrupt Service Routines may execute callback handlers,
 registered by the layer above. Peripheral drivers should be self-contained and
 deal with a single peripheral. An exception may be DMA transfers,
