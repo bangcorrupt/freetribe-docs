@@ -13,23 +13,7 @@ The separation is currently in name only, memory protection is not yet supported
 
 The kernel orchestrates a set of services, built on device and peripheral drivers.
 A simple API is provided, hiding the complexity of the underlying system.
-The rest of this section looks at each layer, from the hardware up.
-
-### Hardware
-
-`freetribe/cpu/src/kernel/hardware/hw_*`
-
-Macros and definitions for accessing CPU registers.
-These files are from Texas Instruments Starterware.
-We should not have to modify anything at this layer.
-
-### CSL
-
-`freetribe/cpu/src/kernel/csl/csl_*`
-
-The Chip Support Library provides functions for accessing CPU registers.
-These files are from Texas Instruments Starterware.
-It is unlikely that we will need to modify anything at this layer.
+The rest of this section looks at each layer, from the peripheral drivers up.
 
 ### Peripheral
 
