@@ -419,24 +419,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csl" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSL
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#peripheral" class="md-nav__link">
     <span class="md-ellipsis">
       Peripheral
@@ -735,24 +717,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csl" class="md-nav__link">
-    <span class="md-ellipsis">
-      CSL
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#peripheral" class="md-nav__link">
     <span class="md-ellipsis">
       Peripheral
@@ -845,17 +809,7 @@ The separation is currently in name only, memory protection is not yet supported
 <p><code>freetribe/cpu/src/kernel/knl_*</code></p>
 <p>The kernel orchestrates a set of services, built on device and peripheral drivers.
 A simple API is provided, hiding the complexity of the underlying system.
-The rest of this section looks at each layer, from the hardware up.</p>
-<h3 id="hardware">Hardware</h3>
-<p><code>freetribe/cpu/src/kernel/hardware/hw_*</code></p>
-<p>Macros and definitions for accessing CPU registers.
-These files are from Texas Instruments Starterware.
-We should not have to modify anything at this layer.</p>
-<h3 id="csl">CSL</h3>
-<p><code>freetribe/cpu/src/kernel/csl/csl_*</code></p>
-<p>The Chip Support Library provides functions for accessing CPU registers.
-These files are from Texas Instruments Starterware.
-It is unlikely that we will need to modify anything at this layer.</p>
+The rest of this section looks at each layer, from the peripheral drivers up.</p>
 <h3 id="peripheral">Peripheral</h3>
 <p><code>freetribe/cpu/src/kernel/peripheral/per_*</code></p>
 <p>The peripheral layer uses CSL functions to initialise and control CPU peripherals,
