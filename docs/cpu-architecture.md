@@ -23,11 +23,11 @@ Macros and definitions for accessing CPU registers.
 These files are from Texas Instruments Starterware.
 We should not have to modify anything at this layer.
 
-### HAL
+### CSL
 
-`freetribe/cpu/src/kernel/hal/hal_*`
+`freetribe/cpu/src/kernel/csl/csl_*`
 
-Functions for accessing CPU registers.
+The Chip Support Library provides functions for accessing CPU registers.
 These files are from Texas Instruments Starterware.
 It is unlikely that we will need to modify anything at this layer.
 
@@ -35,7 +35,7 @@ It is unlikely that we will need to modify anything at this layer.
 
 `freetribe/cpu/src/kernel/peripheral/per_*`
 
-The peripheral layer uses HAL functions to initialise and control CPU peripherals,
+The peripheral layer uses CSL functions to initialise and control CPU peripherals,
 such as UART or SPI. Interrupt Service Routines may execute callback handlers,
 registered by the layer above. Peripheral drivers should be self-contained and
 deal with a single peripheral. An exception may be DMA transfers,
