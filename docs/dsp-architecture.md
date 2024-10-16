@@ -12,14 +12,14 @@ be made more similar to the CPU firmware.
 `freetribe/dsp/src/kernel/knl_*`
 
 The kernel orchestrates a set of services, built on device and peripheral drivers.
-The rest of this section looks at each layer, from the hardware up.
+The rest of this section looks at each layer, from the peripheral drivers up.
 
 ### Peripheral
 
 `freetribe/dsp/src/kernel/peripheral/per_*`
 
-The peripheral layer accesses hardware registers directly to initialise and
-control DSP peripherals, such as SPI or SPORT (for i2s).
+The peripheral layer initialises and controls DSP peripherals,
+such as SPI or SPORT (for i2s).
 Currently, Interrupt Service Routines push directly to queues in the peripheral driver.
 Queues should be moved up to a device layer,
 with ISRs executing optional callback functions.
